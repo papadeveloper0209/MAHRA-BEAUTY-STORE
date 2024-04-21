@@ -1,0 +1,648 @@
+:root{
+    --primary-color:#ebbbb4 ;
+    --secundary-color:#f8ede9 ;
+    --mahra-color:#de9b92;
+    --mahra-color-fuerte:#db7163;
+    --white: #f8f6f7;
+    --vh-animation:-5.1vh
+    
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Recursive", sans-serif;
+    font-weight: 400;
+    
+}
+@keyframes holderbotom {
+    0%{
+        color: var(--mahra-color);
+    }
+    100%{
+        color: var(--mahra-color-fuerte);
+    }
+}
+
+@keyframes subida__welcome {
+    0%{
+        transform: translateY()
+    }
+    4%{
+        transform: translateY(var(--vh-animation))
+    }
+    100%{
+        transform: translateY(var(--vh-animation))
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    max-width:100vw;
+    margin: 0;
+
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height: 17dvh;
+    width: 100%;
+    position: sticky;
+    margin: 0;
+    top: 0;
+    background-color: rgba(223, 223, 223, 0);
+    font-size:clamp(1vw,1.3vw,3vw);
+    z-index: 2;
+
+}
+h1{
+    position: absolute;
+    user-select: none;
+    color: #db716300;
+    font-size: 4vh;
+    z-index: -1;
+    width: 1vw;
+    height: 0;
+    top: 20vh;
+
+}
+#punto__home{
+    width: 100%;
+    position: absolute;
+    
+}
+#welcome{
+    display: flex;
+    height: 30%;
+    min-width: 100%;
+    font-size: clamp(12px,1vw,1.5vw);
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    font-weight: 300;
+
+    
+    
+}
+#welcome__p{
+    display: flex;
+    height:fit-content;
+    width: fit-content; 
+    margin: 0;
+    color: var(--white);
+    user-select: none;
+    
+    
+}
+#content__nav__bar{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    background-color: var(--secundary-color);
+    justify-content: space-between;
+    z-index: 1;
+    animation-timeline: scroll();   
+    animation-name:subida__welcome;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    user-select: none;
+
+}
+#nav__bar{
+    display: flex;
+    margin-left: 1.5%;
+    justify-content: flex-start;
+    gap: 10%;
+    width: clamp(10%,10%,10%);
+    align-items: center;
+    width: 30%;
+}
+.link__nav__bar{
+    text-decoration: none;
+    color: var(--mahra-color);
+    font-size: clamp(12px,2.9vh,5vh);
+}
+.link__nav__bar:hover{
+    animation-name: holderbotom;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2;
+}
+#titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    color: var(--mahra-color);
+    align-self: center;
+    text-decoration: none;
+    width: fit-content;
+    
+    
+}
+#title__pagina{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    font-size: clamp(16px,2.7vw,3vw);
+    font-weight: 600;
+}
+#title__dos{
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    font-size: clamp(6px,1.1vw,1.5vw);
+}
+#contac{
+    
+    margin-right: 1.5%;
+    width: 30%;
+    height: fit-content;
+    align-self: center;
+    text-align: end;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: max-content;
+    background-color: var(--secundary-color);
+
+
+}
+#home{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 83dvh;
+    user-select: none;
+}
+.home__img{
+    width: 30%;
+    height: 100%;
+}
+
+#img__1{
+    background-image: url(/img/lentes\ con\ pajaro\ -\ copia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#img__2{
+    width: 40%;
+    background-image: url(/img/pesta;as-fondo-blanco.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#img__3{
+    width: 30%;
+    height: 100%;
+    background-image: url(/img/lentes\ parque.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#difuminado{
+    height: 83vh;
+    width: 100%;
+    background: linear-gradient(360deg, rgba(0,0,0,0.7679446778711485) 0%, rgba(255,255,255,0) 50%);
+    position: absolute;
+    
+}
+#txt__contenedor{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1%;
+    position: absolute;
+    align-self: flex-end;
+    justify-content: center;
+    user-select: none;
+
+}
+#txt__home{
+    text-align: center;
+    color:  var(--secundary-color);
+    font-size: 2.5vw;
+    font-weight: 800;
+}
+#punto_prod{
+    align-self: flex-end;
+    position: absolute;
+    height:7% ;
+    width: 0;
+}
+
+#productos__section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+}
+#productos__contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+
+}
+.division__section{
+    width: 100%;
+    height: 17vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.2vw;
+    margin: 0;
+    color: var(--secundary-color);
+    background-color: var(--mahra-color);
+    user-select: none;
+}
+h2{
+    font-weight: 800;
+    text-align: center;
+    font-size: clamp(32px,3vw,4vw);
+    margin: 0;
+    margin-top: 6vh;
+
+}
+h3{
+    font-weight: 800;
+    text-align: center;
+    font-size: clamp(32px,3vw,4vw);
+    margin: 0;
+}
+.contenedor__producto{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 40vh;
+    margin-top: 2vw;
+    justify-content: space-evenly;
+}
+.img__producto{
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+    margin-left: 2vw;
+    align-content: center;
+}
+#img__pestanas{
+    background-image: url(/img/catalogo/pestanas.jpg);
+}
+#img__lentes{
+    background-image: url(/img/catalogo/lentes\ de\ contacto.jpg);
+}
+#img__mkp__lover__collection__2{
+    background-image: url(/img/catalogo/MKP\ LOVER\ COLLECTION\ II.webp);
+}
+#BROCHAS__DELINEADO{
+    background-image: url(/img/catalogo/BROCHAS\ DELINEADO.webp);
+}
+#BROCHAS__DIFUMINADO{
+    background-image: url(/img/catalogo/BROCHAS\ DIFUMINADO.webp)
+}
+#PALETA__MEZCLADORA{
+    background-image: url(/img/catalogo/PALETA\ MEZCLADORA.webp)
+}
+#ENVASES__POLVO{
+    background-image: url(/img/catalogo/ENVASES\ POLVO.webp)
+}
+#ENVASES__LABIAL{
+    background-image: url(/img/catalogo/ENVASES\ LABIAL.webp)
+}
+#BLENDER__PUFF{
+    background-image: url(/img/catalogo/BLENDER\ PUFF.webp)
+}
+#PAPEL__ANTIGRASA{
+    background-image: url(/img/catalogo/PAPEL\ ANTIGRASA.webp)
+}
+#contenedor__mas{
+    margin-left:25% ;
+    margin-right:25% ;
+    display: flex;
+    align-content: center;
+    
+}
+#mas__productos{
+    width: 60%;
+    display: flex;
+    margin: 0;
+    position: relative;
+    justify-content: center;
+    user-select: none;
+    margin-left: 30%;
+}
+#whatsapp__mas__info{
+    width: 80%;
+    margin: 0;
+    position: relative;
+}
+.cont__description{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo__producto{
+    font-size: 1.7vw;
+    height:  fit-content;
+    margin-top: 0.7vw;
+    margin-bottom: 1.5vh;
+    color: var(--mahra-color);
+}
+.descripcion__producto{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    padding-inline-start: 5%;
+    margin: 0;
+    margin-top: 1.7vH;
+    margin-bottom: 0.5vH;
+    justify-content: center;
+    
+}
+.li__pr{
+    font-size:clamp(8px, 1.2vw,1.6vw);
+    color: var(--mahra-color);
+}
+.precio{
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    color: var(--mahra-color-fuerte);
+}
+.condicon__description{
+    font-size: 1vw;
+    margin: 0;
+    margin-top: 0.5vw;
+    color: var(--mahra-color);
+    width: 70%;
+}
+.w__botom{
+
+    width: 100%;
+
+}
+.cont__w__botom{
+    display: flex;
+    width: 3vw;
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 31vh;
+    margin-right: 3.1vw; 
+}
+footer{
+    height: 20vh;
+    width: 100%;
+    user-select: none;
+}
+#contactanos__conteiner{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secundary-color);
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    
+}
+#contactanos__description{
+    color: var(--mahra-color-fuerte);
+    font-weight: 600;
+    margin: 0;
+    margin-top: 12vh;
+    font-size: clamp(8px,1.8vw,2.8vw);
+}
+#contenedor__redes__logos{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16vh;
+    margin-bottom: 20vh;
+    user-select: none;
+
+}
+.contenedor__logo{
+    display: flex;
+    width: 5%;
+    height: fit-content;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    user-select: none;
+}
+.logo__redes{
+    width: 100%;
+    height: auto;
+    user-select: none;
+
+}
+#footer{
+    background-color: var(--mahra-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 9vh;
+    width: 100%;
+}
+.footer__element{
+    height: fit-content;
+    width: fit-content;
+    color: var(--secundary-color);
+    font-weight: 600;
+    font-size: 3vh;
+}
+#mas__wpps__logo{
+    margin-left: 0;
+}
+
+
+    @media screen and (max-width:740px) {
+        :root  {
+            --vh-animation:-2.4vh;
+        }  
+        header{
+        
+            height: 8dvh;
+            }  
+        #home{
+                height: 92dvh;
+        }
+        #difuminado{
+            height: 92vh;
+        }
+        #home{
+            flex-direction: column;
+
+        }
+        #img__1{
+            height: 30%;
+            width: 100%;
+        }
+        #img__2{
+            height: 40%;
+            width: 100%;
+        }
+        #img__3{
+            height: 30%;
+            width: 100%;
+        }
+        #txt__home{
+        align-self: center;
+        justify-items: flex-end;
+        font-size: 3vw;
+    }
+        #txt__contenedor{
+        width: 100%;
+        margin-bottom: 1%;
+        position: absolute;
+        margin-top: 83vh;
+        justify-self: center; 
+    }
+    #punto_prod{
+        margin-top: 87vh;
+    }
+    .division__section{
+        height: 8vh;
+        font-size: 6vw;
+        align-self: center;
+        justify-self: center;
+    }
+    h2{
+
+        font-size: clamp(4px,5vh,6vh);
+        margin: 0;
+        margin-top: 1.5vh;
+    
+    }
+    .contenedor__producto{
+        width: 100%;
+        align-self: center;
+        height: 50vh;
+        
+    }
+    #productos__contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: max-content;
+        justify-content: center;
+    
+    }
+    .li__pr{
+        font-size: clamp(2vw, 2.8vw,3vw); ;
+    }
+    h4{
+        font-size: clamp(32px,8vw,89vw);
+    }
+    .cont__description{
+        width: 50%;
+    }
+    .titulo__producto{
+        font-size: 3vw;
+
+    }
+    .precio{
+        font-size: 2.8vw;
+        color: var(--mahra-color-fuerte);
+    }
+    .condicon__description{
+        font-size: 2vw;
+    }
+    .cont__w__botom{
+        width: 6vw;
+        margin-top: 35vh;
+        margin-right: 6vw; 
+    }
+    .descripcion__producto{
+        margin-top: 1vH;
+    }
+    #contactanos__description{
+        font-size: clamp(12px,2vh,5vw);
+        margin-top: 4vh;
+    }
+    #contenedor__redes__logos{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+        user-select: none;
+    
+    }
+    .contenedor__logo{
+        width: 25%;
+        height: auto;
+        user-select: none;
+    
+    }
+    #footer{
+
+        align-items: center;
+    }
+    .footer__element{
+        font-size: 1.2vh;
+    }
+    .link__nav__bar{
+        font-size: clamp(8px,1.5vh,5vh);
+    }
+    #contenedor__mas{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    }
+    
+
+
+
+
+
+
+    @media screen and (max-width:450px) {
+
+    .division__section{
+        height: 5vh;
+
+    }
+    h2{
+        font-weight: 800;
+        text-align: center;
+        font-size: clamp(4px,3vh,6vh);
+        margin: 0;
+        margin-top: 1vh;
+    
+    }
+    h3{
+        font-size: clamp(32px,7vw,8vw);
+    }
+    .cont__description{
+        width: 50%;
+    }
+    .contenedor__producto{
+        width: 100%;
+        align-self: center;
+        height: 20vh;
+        
+    }
+    .cont__w__botom{
+        width: 7vw;
+        margin-top: 15.2vh;
+        margin-right: 8vw; 
+    }
+    
+    }
