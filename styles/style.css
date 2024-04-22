@@ -156,6 +156,19 @@ h1{
     width: fit-content;
     margin: 0;
     font-size: clamp(6px,1.1vw,1.5vw);
+}#title__pagina{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    font-size: clamp(16px,2.7vw,3vw);
+    font-weight: 600;
+}
+#title__dos{
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    font-size: clamp(6px,1.1vw,1.5vw);
 }
 #contac{
     
@@ -472,17 +485,17 @@ footer{
 
     @media screen and (max-width:740px) {
         :root  {
-            --vh-animation:-2.4vh;
+            --vh-animation:-3vh;
         }  
         header{
         
-            height: 8dvh;
+            height: 10dvh;
             }  
         #home{
-                height: 92dvh;
+                height: 90dvh;
         }
         #difuminado{
-            height: 92vh;
+            height: 90vh;
         }
         #home{
             flex-direction: column;
@@ -513,7 +526,7 @@ footer{
         justify-self: center; 
     }
     #punto_prod{
-        margin-top: 87vh;
+        margin-top: 83vh;
     }
     .division__section{
         height: 8vh;
@@ -600,11 +613,17 @@ footer{
         font-size: 1.2vh;
     }
     .link__nav__bar{
-        font-size: clamp(8px,1.5vh,5vh);
+        font-size: clamp(8px,1.6vh,5vh);
     }
     #contenedor__mas{
         margin-left: 10%;
         margin-right: 10%;
+    }
+    #title__pagina{
+        font-size: clamp(10px,4vh,5vw);
+    }
+    #title__dos{
+        font-size: clamp(6px,1.5vh,2vw);
     }
     }
     
