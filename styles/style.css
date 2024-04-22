@@ -173,7 +173,7 @@ h1{
 #contac{
     
     margin-right: 1.5%;
-    width: 30%;
+    width: fit-content;
     height: fit-content;
     align-self: center;
     text-align: end;
@@ -245,8 +245,9 @@ main{
 #txt__home{
     text-align: center;
     color:  var(--secundary-color);
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: 800;
+    text-shadow: 7px 2px 10px #160503;
 }
 #punto_prod{
     align-self: flex-end;
@@ -432,6 +433,12 @@ footer{
     text-align: center;
     
 }
+#cont__header__bot{
+    width: 30%;
+    display: grid;
+    align-content: center;
+    justify-items: end;
+}
 #contactanos__description{
     color: var(--mahra-color-fuerte);
     font-weight: 600;
@@ -516,13 +523,13 @@ footer{
         #txt__home{
         align-self: center;
         justify-items: flex-end;
-        font-size: 3vw;
+        font-size: 5vw;
     }
         #txt__contenedor{
         width: 100%;
         margin-bottom: 1%;
         position: absolute;
-        margin-top: 83vh;
+        margin-top: 78vh;
         justify-self: center; 
     }
     #punto_prod{
