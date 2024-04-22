@@ -544,7 +544,7 @@ footer{
     
     }
     .li__pr{
-        font-size: clamp(2vw, 2.4vw,3vw); ;
+        font-size: clamp(2vw, 2.6vw,3vw); ;
     }
     h4{
         font-size: clamp(32px,8vw,89vw);
@@ -564,7 +564,7 @@ footer{
         font-size: 2vw;
     }
     .cont__w__botom{
-        width: 6vw;
+        width: 5vw;
         margin-top: 35vh;
         margin-right: 6vw; 
     }
@@ -641,7 +641,7 @@ footer{
         
     }
     .cont__w__botom{
-        width: 7vw;
+        width: 6vw;
         margin-top: 15.2vh;
         margin-right: 8vw; 
     }
