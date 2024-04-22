@@ -544,7 +544,7 @@ footer{
     
     }
     .li__pr{
-        font-size: clamp(2vw, 2.1vw,3vw); ;
+        font-size: clamp(2vw, 2.4vw,3vw); ;
     }
     h4{
         font-size: clamp(32px,8vw,89vw);
