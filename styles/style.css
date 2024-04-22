@@ -544,7 +544,7 @@ footer{
     
     }
     .li__pr{
-        font-size: clamp(2vw, 2.8vw,3vw); ;
+        font-size: clamp(2vw, 2.1vw,3vw); ;
     }
     h4{
         font-size: clamp(32px,8vw,89vw);
@@ -553,7 +553,7 @@ footer{
         width: 50%;
     }
     .titulo__producto{
-        font-size: 3vw;
+        font-size: 2.4vw;
 
     }
     .precio{
@@ -570,6 +570,7 @@ footer{
     }
     .descripcion__producto{
         margin-top: 1vH;
+        font-size: clamp(1.5vw, 2vw, 3vw);
     }
     #contactanos__description{
         font-size: clamp(12px,2vh,5vw);
