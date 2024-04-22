@@ -360,8 +360,8 @@ h3{
 .titulo__producto{
     font-size: 1.7vw;
     height:  fit-content;
-    margin-top: 0.7vw;
-    margin-bottom: 1.5vh;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vh;
     color: var(--mahra-color);
 }
 .descripcion__producto{
