@@ -76,7 +76,7 @@ h1{
 #welcome{
     display: flex;
     height: 30%;
-    min-width: 100%;
+    width: 100%;
     font-size: clamp(12px,1vw,1.5vw);
     background-color: var(--primary-color);
     justify-content: center;
@@ -106,9 +106,9 @@ h1{
     z-index: 1;
     animation-timeline: scroll();   
     animation-name:subida__welcome;
-    animation-fill-mode: forwards;
     animation-timing-function: ease;
     user-select: none;
+    width: 100%;
 
 }
 #nav__bar{
@@ -670,17 +670,6 @@ footer{
         width: 6vw;
         margin-top: 15.2vh;
         margin-right: 8vw; 
-    }
-    @keyframes subida__welcome {
-        0%{
-            transform: translateY()
-        }
-        20%{
-            transform: translateY(var(--vh-animation))
-        }
-        100%{
-            transform: translateY(var(--vh-animation))
-        }
     }
     
     }
