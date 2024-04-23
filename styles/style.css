@@ -504,6 +504,7 @@ footer{
         #img__3{
             height: 30%;
             width: 100%;
+            background-position-y:-18.3vh ;
         }
         #txt__home{
         align-self: center;
@@ -514,7 +515,7 @@ footer{
         width: 100%;
         margin-bottom: 1%;
         position: absolute;
-        margin-top: 72.5vh;
+        margin-top: 70vh;
         justify-self: center; 
     }
     #punto_prod{
