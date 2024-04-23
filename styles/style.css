@@ -113,7 +113,7 @@ h1{
 }
 #nav__bar{
     display: flex;
-    margin-left: 1.5%;
+    margin-left: 1.5vw;
     justify-content: flex-start;
     gap: 10%;
     width: clamp(10%,10%,10%);
@@ -143,14 +143,6 @@ h1{
     
     
 }
-#title__pagina{
-    display: flex;
-    height: fit-content;
-    width: fit-content;
-    margin: 0;
-    font-size: clamp(16px,2.7vw,3vw);
-    font-weight: 600;
-}
 #title__dos{
     height: fit-content;
     width: fit-content;
@@ -164,15 +156,7 @@ h1{
     font-size: clamp(16px,2.7vw,3vw);
     font-weight: 600;
 }
-#title__dos{
-    height: fit-content;
-    width: fit-content;
-    margin: 0;
-    font-size: clamp(6px,1.1vw,1.5vw);
-}
 #contac{
-    
-    margin-right: 1.5%;
     width: fit-content;
     height: fit-content;
     align-self: center;
@@ -245,7 +229,7 @@ main{
 #txt__home{
     text-align: center;
     color:  var(--secundary-color);
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: 800;
     
 }
@@ -438,6 +422,7 @@ footer{
     display: grid;
     align-content: center;
     justify-items: end;
+    margin-right: 1.5vw;
 }
 #contactanos__description{
     color: var(--mahra-color-fuerte);
@@ -499,10 +484,10 @@ footer{
             height: 10vh;
             }  
         #home{
-                height: 90vh;
+                height: 85vh;
         }
         #difuminado{
-            height: 90vh;
+            height: 85vh;
         }
         #home{
             flex-direction: column;
@@ -523,17 +508,17 @@ footer{
         #txt__home{
         align-self: center;
         justify-items: flex-end;
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
         #txt__contenedor{
         width: 100%;
         margin-bottom: 1%;
         position: absolute;
-        margin-top: 80vh;
+        margin-top: 72.5vh;
         justify-self: center; 
     }
     #punto_prod{
-        margin-top: 83vh;
+        margin-top: 78vh;
     }
     .division__section{
         height: 8vh;
@@ -543,9 +528,8 @@ footer{
     }
     h2{
 
-        font-size: clamp(4px,5vh,6vh);
+        font-size: clamp(4px,6vh,7vh);
         margin: 0;
-        margin-top: 1.5vh;
     
     }
     .contenedor__producto{
@@ -627,10 +611,10 @@ footer{
         margin-right: 10%;
     }
     #title__pagina{
-        font-size: clamp(10px,4vh,5vw);
+        font-size: clamp(10px,6vh,7vw);
     }
     #title__dos{
-        font-size: clamp(6px,1.5vh,2vw);
+        font-size: clamp(6px,2vh,3vw);
     }
     }
     
@@ -640,18 +624,20 @@ footer{
 
 
 
-    @media screen and (max-width:450px) {
+    @media screen and (max-width:550px) {
 
     .division__section{
-        height: 5vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        height: 7vh;
 
     }
     h2{
         font-weight: 800;
         text-align: center;
-        font-size: clamp(4px,3vh,6vh);
+        font-size: clamp(4px,4vh,6vh);
         margin: 0;
-        margin-top: 1vh;
     
     }
     h3{
