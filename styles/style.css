@@ -484,10 +484,10 @@ footer{
             height: 10vh;
             }  
         #home{
-                height: 82vh;
+                height: 80vh;
         }
         #difuminado{
-            height: 82vh;
+            height: 80vh;
         }
         #home{
             flex-direction: column;
@@ -504,7 +504,7 @@ footer{
         #img__3{
             height: 30%;
             width: 100%;
-            background-position-y:-18.3vh ;
+            background-position-y:-17.5vh ;
         }
         #txt__home{
         align-self: center;
@@ -515,11 +515,11 @@ footer{
         width: 100%;
         margin-bottom: 1%;
         position: absolute;
-        margin-top: 70vh;
+        margin-top: 66vh;
         justify-self: center; 
     }
     #punto_prod{
-        margin-top: 75vh;
+        margin-top: 73.5vh;
     }
     .division__section{
         height: 8vh;
