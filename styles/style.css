@@ -509,7 +509,7 @@ footer{
         #txt__home{
         align-self: center;
         justify-items: flex-end;
-        font-size: 5vw;
+        font-size: 4vw;
     }
         #txt__contenedor{
         width: 100%;
@@ -612,10 +612,10 @@ footer{
         margin-right: 10%;
     }
     #title__pagina{
-        font-size: clamp(10px,6vh,7vw);
+        font-size: clamp(4px,4vh,7vw);
     }
     #title__dos{
-        font-size: clamp(6px,2vh,3vw);
+        font-size: clamp(4px,1.9vh,3vw);
     }
     }
     
