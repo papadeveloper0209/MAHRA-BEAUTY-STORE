@@ -549,7 +549,7 @@ footer{
     
     }
     .li__pr{
-        font-size: clamp(2vw, 2.9vw,2.5vw); ;
+        font-size: clamp(2vw, 3.4vw,2.5vw); ;
     }
     h4{
         font-size: clamp(32px,8vw,89vw);
@@ -558,7 +558,7 @@ footer{
         width: 50%;
     }
     .titulo__producto{
-        font-size: 2.4vw;
+        font-size: 3vw;
 
     }
     .precio{
@@ -625,7 +625,7 @@ footer{
 
 
 
-    @media screen and (max-width:550px) {
+    @media screen and (max-width:500px) {
 
     .division__section{
         display: grid;
